@@ -13,8 +13,6 @@ import static net.serenitybdd.screenplay.actors.OnStage.*;
 
 public class InstagramStepDefinitions {
 
-
-
     @Given("that {string} enter the beginning of the instagram session {string}")
     public void thatEnterTheBeginningOfTheInstagramSession(String nameactor, String url) {
         setTheStage(new OnlineCast());
