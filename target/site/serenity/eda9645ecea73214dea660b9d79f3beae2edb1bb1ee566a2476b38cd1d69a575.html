@@ -148,7 +148,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Login","type":"feature","href":"eda9645ecea73214dea660b9d79f3beae2edb1bb1ee566a2476b38cd1d69a575.html","nodes":[],"selectable":false,"tags":["",""]}];
+            var requirementsTree = [{"text":"Login","type":"feature","href":"eda9645ecea73214dea660b9d79f3beae2edb1bb1ee566a2476b38cd1d69a575.html","nodes":[],"selectable":false,"tags":["","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -217,7 +217,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated </span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-08-2022 10:05</span>
     <br style="clear:left"/>
 </div>
 
@@ -273,11 +273,71 @@
 
                                             <div id="toc">
                                                 <table class="table" id="toc-table">
+                                                        <tr>
+                                                            <td style="width:95%;" class="toc-title">
+                                                                <a href="#f9332bab3e7b9431aa314582800e194c1cdfc83bef57f81b3865cceb2ebc39b3" title="View scenario details" >Enter the website</a>
+
+
+                                                            </td>
+                                                            <td style="width:5%;">
+                                                                <table>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                               href="c4ddf371b75c57cb0aacbb27804485c817bb1c67e87a3977727043923eb2b01f.html"
+                                                                               title="View test results">
+                                                                            <a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a>
+                                                                            </a>
+
+                                                                        
+                                                                        </td>
+                                                                        <td>
+                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                               href="c4ddf371b75c57cb0aacbb27804485c817bb1c67e87a3977727043923eb2b01f.html"
+                                                                               title="View test results">
+                                                                                <i class="fas fa-search-plus"></i>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
                                                 </table>
 
                                             </div>
 
                                             <h3>Scenario details</h3>
+
+                                                <div class="scenario-docs card" id="f9332bab3e7b9431aa314582800e194c1cdfc83bef57f81b3865cceb2ebc39b3">
+                                                    <div class="scenario-docs card-header error" style="min-height:1.5em;">
+                                                        <div>
+                                                            <span class="scenario-heading">
+                                                                <a href="c4ddf371b75c57cb0aacbb27804485c817bb1c67e87a3977727043923eb2b01f.html" title="View test results">enter the website</a>
+                                                            </span>
+                                                            <span class="scenario-result-icon">
+                                                                
+
+                                                                    <a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scenario-docs card-body">
+                                                            <p>Given that 'Luna' enter the beginning of the instagram session 'https://www.instagram.com/accounts/login/'</p>
+                                                            <p><p>When enter corresponding data</p>
+<table>
+<thead>
+<tr><th>username</th><th>password</th></tr>
+</thead>
+<tbody>
+<tr><td>lunagp03@gmail.com</td><td>lunagp1109</td></tr>
+</tbody>
+</table>
+</p>
+                                                            <p>Then log in successfully</p>
+                                                        <div class="examples">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
@@ -286,7 +346,41 @@
                             <div id="results" class="tab-pane fade">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-4">
+
+                                            <div style="width:300px;" class="chart-container automated-and-manual-results">
+                                                <div class="ct-chart ct-square"></div>
+                                            </div>
+                                            <script>
+
+                                                var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '100%', ' ', ' ', ' '];
+                                                // Our series array that contains series objects or in this case series data arrays
+
+                                                var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 1}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+
+                                                // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
+                                                // as you saw in the previous example
+                                                var options = {
+                                                    width: 350,
+                                                    height: 300
+                                                };
+
+                                                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                                                    new Chartist.Pie('.ct-chart', {
+                                                        series: series,
+                                                        labels: labels,
+                                                    }, {
+                                                        donut: true,
+                                                        donutWidth: 60,
+                                                        donutSolid: true,
+                                                        startAngle: 270,
+                                                        showLabel: true
+                                                    }, options);
+                                                });
+
+                                            </script>
+                                        </div>
+                                        <div class="col-sm-8">
 
                                         <table class="table">
                                             <thead>
@@ -327,8 +421,8 @@
                                                 <td class="automated-stats"> </td>
                                             </tr>
                                             <tr>
-                                                                            <td colspan="3"><i
-                                                                                class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                             <td colspan="3"><a href="73a3df654e7d8fff406bd49dbabf16185b789d9582abaa69f8d78c52aa9371f5.html"><i
+                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                             </td>
 
                                             </tr>
@@ -341,12 +435,12 @@
                                                 <td class="automated-stats">0</td>
                                                 <td class="automated-stats"> </td>
                                             <tr>
-                                                                <td class="aggregate-result-count indented-error-category">
-                                                                    <i
-                                                                            class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken
-                                                                </td>
-                                                <td class="automated-stats">0</td>
-                                                <td class="automated-stats"> </td>
+                                                                    <td class="aggregate-result-count indented-error-category">
+                                                                        <a href="386ecc235aecc8807664e8223bef43a39a51a14bf99a0986c9a2948fcfa981c0.html"><i
+                                                                                class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken</a>
+                                                                    </td>
+                                                <td class="automated-stats">1</td>
+                                                <td class="automated-stats">100%</td>
                                             <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -357,7 +451,7 @@
                                             </tr>
                                             <tr class="summary-stats">
                                                 <td class="aggregate-result-count">Total</td>
-                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats">1</td>
                                                 <td class="automated-stats"></td>
                                             </tr>
                                             </tbody>
@@ -379,11 +473,11 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td>0ms</td>
-                                                        <td>0ms</td>
-                                                        <td>0ms</td>
-                                                        <td>0ms</td>
-                                                        <td>0ms</td>
+                                                        <td>6s</td>
+                                                        <td>6ms</td>
+                                                        <td>6s</td>
+                                                        <td>6s</td>
+                                                        <td>6s</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -395,7 +489,31 @@
                                             <div class="col-sm-12">
                                                 <h3><i class="fas fa-cogs"></i> Automated Tests</h3>
 
-                                            No automated tests were executed
+                                            <table class="scenario-result-table table" id="scenario-results">
+                                                <thead>
+                                                <tr>
+                                                    <th class="test-name-column">Scenario</th>
+                                                    <th>Steps</th>
+                                                    <th>Start Time</th>
+                                                    <th>Duration</th>
+                                                    <th>Result</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="scenario-result ERROR">
+                                                    <td>
+                                                            <a href="c4ddf371b75c57cb0aacbb27804485c817bb1c67e87a3977727043923eb2b01f.html">enter the website</a>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>10:05:55</td>
+                                                    <td>6s 667ms</td>
+                                                    <td>
+                                                            <a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a> <span
+                                                                style="display:none">ERROR</span>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
 
                                             </div>
                                         </div>

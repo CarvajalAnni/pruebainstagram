@@ -1,5 +1,7 @@
 Feature: Login
-  Scenario:
-    Given enter the beginning of the instagram session "https://www.instagram.com/accounts/login/"
+  Scenario: enter the website
+    Given that 'Luna' enter the beginning of the instagram session 'https://www.instagram.com/accounts/login/'
     When enter corresponding data
+      | username           | password   |
+      | lunagp03@gmail.com | lunagp1109 |
     Then log in successfully

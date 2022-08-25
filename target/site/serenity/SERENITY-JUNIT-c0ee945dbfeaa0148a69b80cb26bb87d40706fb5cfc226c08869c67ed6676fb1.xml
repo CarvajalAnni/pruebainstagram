@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Login" skipped="0" tests="1" time="0.51" timestamp="2022-08-25 09:41:47"><testcase name=""><error message="No stage available - it looks like you haven't called the setTheStage() method before calling this one." type="net.serenitybdd.screenplay.actors.NoStageException">No stage available - it looks like you haven't called the setTheStage() method before calling this one.</error><system-err>No stage available - it looks like you haven't called the setTheStage() method before calling this one.&#13;
+co.com.instagram.stepdefinitions.InstagramStepDefinitions.enterTheBeginnigOfTheInstagramSession(InstagramStepDefinitions.java:26)&#13;
+✽.enter the beginning of the instagram session "https://www.instagram.com/accounts/login/"(file:///C:/Users/ADMIN/IdeaProjects/Instagram/src/test/resources/features/instagram.feature:4)&#13;
+</system-err></testcase></testsuite>
