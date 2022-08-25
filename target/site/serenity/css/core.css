@@ -93,6 +93,20 @@ td.tag-title {
     padding-bottom: 1em;
 }
 
+<<<<<<< HEAD
+.scenario-comments {
+    font-style: italic;
+    font-weight: normal;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+}
+
+.scenario-comments i {
+    padding-right: 0.5em;
+}
+
+=======
+>>>>>>> 9ea028b864a49d34c48f1283812a296237ee0f2c
 #bottomfooter
 {
     background-image:url(../images/bg_04.jpg); height:26px; background-repeat:repeat-x; margin:0 auto;
@@ -286,6 +300,19 @@ h3.discreet-story-header {
     margin-bottom: 1em;
 }
 
+<<<<<<< HEAD
+.rule-title {
+    color: #428bca;
+    font-family:euphemia, verdana, sans-serif;font-size: 1.3em; font-weight:normal; font-style: italic;
+    padding-bottom: 0.5em;
+}
+
+.rule-title i {
+    padding-right: 0.25em;
+}
+
+=======
+>>>>>>> 9ea028b864a49d34c48f1283812a296237ee0f2c
 .discreet-requirement-narrative-title td, th {
     padding: 0.25em;
 }
@@ -1929,11 +1956,38 @@ h3 {
 .gwt-button {padding-left: 2.5em;}
 .scenario-details p { line-height: 0.8;}
 
+<<<<<<< HEAD
+.scenario-background-section {
+    padding-top: 0.25em;
+}
+
+=======
+>>>>>>> 9ea028b864a49d34c48f1283812a296237ee0f2c
 .scenario-docs p {
     padding-left: 2.5em;
     margin: 0px;
 }
 
+<<<<<<< HEAD
+.rule-toc-entry {
+    font-weight: bold;
+}
+
+.scenario-toc-entry {
+    font-weight: normal;
+    padding-left: 1em;
+}
+
+.scenario-toc-entry i {
+    padding-right: 0.25em;
+}
+
+.orphan-scenario-toc-entry i {
+    padding-right: 0.25em;
+}
+
+=======
+>>>>>>> 9ea028b864a49d34c48f1283812a296237ee0f2c
 .scenario-docs ul {
     padding-left: 3.5em;
     margin: 0px;
@@ -2142,8 +2196,13 @@ td.indented-error-category i {
 }
 
 .example-table {
+<<<<<<< HEAD
+    overflow-x:auto;
+}
+=======
      overflow-x:auto;
  }
+>>>>>>> 9ea028b864a49d34c48f1283812a296237ee0f2c
 
 .example-table table {
     min-width: 80%;
@@ -2266,7 +2325,11 @@ td.indented-error-category i {
 }
 
 .context-icon {
+<<<<<<< HEAD
+    padding-right: 1em;
+=======
    padding-right: 1em;
+>>>>>>> 9ea028b864a49d34c48f1283812a296237ee0f2c
 }
 
 .more-details-result-compromised { background-color: fuchsia; !important; }
